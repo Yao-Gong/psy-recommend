@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-4-6 22:42:43 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="domain.Weibo" table="weibo" catalog="sina_weibo">
+        <id name="mid" type="string">
+            <column name="mid" length="100" />
+            <generator class="assigned" />
+        </id>
+        <property name="date" type="timestamp">
+            <column name="date" length="19" />
+        </property>
+        <property name="text" type="string">
+            <column name="text" length="65535" not-null="true" />
+        </property>
+        <property name="source" type="string">
+            <column name="source" length="100" />
+        </property>
+        <property name="repostsnum" type="java.lang.Integer">
+            <column name="repostsnum" />
+        </property>
+        <property name="commentsnum" type="java.lang.Integer">
+            <column name="commentsnum" />
+        </property>
+        <property name="attitudesnum" type="java.lang.Integer">
+            <column name="attitudesnum" />
+        </property>
+        <property name="uid" type="string">
+            <column name="uid" length="100" not-null="true" />
+        </property>
+        <property name="topic" type="string">
+            <column name="topic" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>

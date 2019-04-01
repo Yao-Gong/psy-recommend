@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-4-2 9:22:29 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="domain.User" table="user" catalog="sina_weibo">
+        <id name="uid" type="string">
+            <column name="uid" length="20" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="50" not-null="true" />
+        </property>
+        <property name="province" type="java.lang.Integer">
+            <column name="province" />
+        </property>
+        <property name="city" type="java.lang.Integer">
+            <column name="city" />
+        </property>
+        <property name="location" type="string">
+            <column name="location" length="20" />
+        </property>
+        <property name="url" type="string">
+            <column name="url" length="80" />
+        </property>
+        <property name="gender" type="string">
+            <column name="gender" length="10" />
+        </property>
+        <property name="followersnum" type="java.lang.Integer">
+            <column name="followersnum" />
+        </property>
+        <property name="friendsnum" type="java.lang.Integer">
+            <column name="friendsnum" />
+        </property>
+        <property name="statusesnum" type="java.lang.Integer">
+            <column name="statusesnum" />
+        </property>
+        <property name="favouritesnum" type="java.lang.Integer">
+            <column name="favouritesnum" />
+        </property>
+        <property name="createdAt" type="timestamp">
+            <column name="created_at" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>

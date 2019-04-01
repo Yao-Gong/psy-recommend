@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-4-25 14:41:52 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="domain.Quality" table="quality" catalog="sina_weibo">
+        <id name="uid" type="string">
+            <column name="uid" length="100" />
+            <generator class="assigned" />
+        </id>
+        <property name="accuracy" type="java.lang.Double">
+            <column name="accuracy" precision="22" scale="0" />
+        </property>
+        <property name="effect" type="java.lang.Double">
+            <column name="effect" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

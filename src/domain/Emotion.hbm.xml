@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-4-21 15:56:50 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="domain.Emotion" table="emotion" catalog="sina_weibo">
+        <id name="uid" type="string">
+            <column name="uid" length="100" />
+            <generator class="assigned" />
+        </id>
+        <property name="na" type="java.lang.Double">
+            <column name="NA" precision="22" scale="0" />
+        </property>
+        <property name="nb" type="java.lang.Double">
+            <column name="NB" precision="22" scale="0" />
+        </property>
+        <property name="nc" type="java.lang.Double">
+            <column name="NC" precision="22" scale="0" />
+        </property>
+        <property name="nd" type="java.lang.Double">
+            <column name="ND" precision="22" scale="0" />
+        </property>
+        <property name="ne" type="java.lang.Double">
+            <column name="NE" precision="22" scale="0" />
+        </property>
+        <property name="ng" type="java.lang.Double">
+            <column name="NG" precision="22" scale="0" />
+        </property>
+        <property name="nh" type="java.lang.Double">
+            <column name="NH" precision="22" scale="0" />
+        </property>
+        <property name="ni" type="java.lang.Double">
+            <column name="NI" precision="22" scale="0" />
+        </property>
+        <property name="nj" type="java.lang.Double">
+            <column name="NJ" precision="22" scale="0" />
+        </property>
+        <property name="nk" type="java.lang.Double">
+            <column name="NK" precision="22" scale="0" />
+        </property>
+        <property name="nl" type="java.lang.Double">
+            <column name="NL" precision="22" scale="0" />
+        </property>
+        <property name="nn" type="java.lang.Double">
+            <column name="NN" precision="22" scale="0" />
+        </property>
+        <property name="pa" type="java.lang.Double">
+            <column name="PA" precision="22" scale="0" />
+        </property>
+        <property name="pb" type="java.lang.Double">
+            <column name="PB" precision="22" scale="0" />
+        </property>
+        <property name="pc" type="java.lang.Double">
+            <column name="PC" precision="22" scale="0" />
+        </property>
+        <property name="pd" type="java.lang.Double">
+            <column name="PD" precision="22" scale="0" />
+        </property>
+        <property name="pe" type="java.lang.Double">
+            <column name="PE" precision="22" scale="0" />
+        </property>
+        <property name="pf" type="java.lang.Double">
+            <column name="PF" precision="22" scale="0" />
+        </property>
+        <property name="pg" type="java.lang.Double">
+            <column name="PG" precision="22" scale="0" />
+        </property>
+        <property name="ph" type="java.lang.Double">
+            <column name="PH" precision="22" scale="0" />
+        </property>
+        <property name="pk" type="java.lang.Double">
+            <column name="PK" precision="22" scale="0" />
+        </property>
+        <property name="judgeTime" type="timestamp">
+            <column name="judgeTime" length="19" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

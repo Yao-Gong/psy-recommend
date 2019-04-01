@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-4-21 15:56:50 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="domain.Psychology" table="psychology" catalog="sina_weibo">
+        <id name="uid" type="string">
+            <column name="uid" length="100" />
+            <generator class="assigned" />
+        </id>
+        <property name="neuroticism" type="java.lang.Double">
+            <column name="neuroticism" precision="22" scale="0" />
+        </property>
+        <property name="agreeableness" type="java.lang.Double">
+            <column name="agreeableness" precision="22" scale="0" />
+        </property>
+        <property name="extraversion" type="java.lang.Double">
+            <column name="extraversion" precision="22" scale="0" />
+        </property>
+        <property name="conscientiousness" type="java.lang.Double">
+            <column name="conscientiousness" precision="22" scale="0" />
+        </property>
+        <property name="openness" type="java.lang.Double">
+            <column name="openness" precision="22" scale="0" />
+        </property>
+        <property name="judgeTime" type="timestamp">
+            <column name="judgeTime" length="19" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
